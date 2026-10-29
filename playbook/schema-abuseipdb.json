@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "ipAddress": { "type": "string" },
+        "abuseConfidenceScore": { "type": "integer" },
+        "countryCode": { "type": ["string", "null"] },
+        "usageType": { "type": ["string", "null"] },
+        "isp": { "type": ["string", "null"] },
+        "domain": { "type": ["string", "null"] },
+        "totalReports": { "type": "integer" },
+        "numDistinctUsers": { "type": "integer" },
+        "lastReportedAt": { "type": ["string", "null"] },
+        "isTor": { "type": "boolean" }
+      }
+    }
+  }
+}

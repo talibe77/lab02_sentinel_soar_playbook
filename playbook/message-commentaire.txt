@@ -1,0 +1,8 @@
+Enrichissement automatique AbuseIPDB
+IP : @{body('Parse_JSON')?['data']?['ipAddress']}
+Score d'abus : @{body('Parse_JSON')?['data']?['abuseConfidenceScore']} %
+Signalements : @{body('Parse_JSON')?['data']?['totalReports']} (par @{body('Parse_JSON')?['data']?['numDistinctUsers']} sources)
+Pays : @{body('Parse_JSON')?['data']?['countryCode']}
+Fournisseur : @{body('Parse_JSON')?['data']?['isp']} (@{body('Parse_JSON')?['data']?['domain']})
+Type d'usage : @{body('Parse_JSON')?['data']?['usageType']}
+Dernier signalement : @{body('Parse_JSON')?['data']?['lastReportedAt']}
